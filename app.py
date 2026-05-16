@@ -83,7 +83,7 @@ def analyze_article(title, summary):
     if not API_KEY:
         return False, "API Key Missing"
         
-    model = genai.GenerativeModel('gemini-2.5-flash')
+    model = genai.GenerativeModel('gemini-1.5-flash')
     
     prompt = f"""
     You are an expert B2B Lead Generation Analyst. Analyze this news:
